@@ -2,9 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class LightObj : MonoBehaviour
 {
+    public UnityEvent OnGameOverEvent;
+
     private LightDirectionSO _lightData;
     private TrailRenderer _lightSource;
 
@@ -41,6 +44,14 @@ public class LightObj : MonoBehaviour
         if (collision.TryGetComponent<IObstacle>(out IObstacle iObstacle))
         {
             iObstacle.LightConversion(this, Direction);
+        }
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
+        {
+            Debug.Log("GameOver");
+            OnGameOverEvent?.Invoke();
+            Direction = Vector2.zero;
+            Destroy(this);
         }
     }
 

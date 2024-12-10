@@ -8,7 +8,7 @@ public class StageManager : MonoBehaviour
 {
     [SerializeField] private StageDataListSO _stageDataListSO;
     [SerializeField] private Button _startBtn;
-    [SerializeField] private Button _creatObstacleBtn;
+    [SerializeField] private ObstaclesCreateBtn _creatObstacleBtn;
     [SerializeField] private RectTransform _creatObstacleBtnPanel;
     public int stageNumber = 1;
 
@@ -25,7 +25,7 @@ public class StageManager : MonoBehaviour
         {
             if(stage.stageNumber == stageNumber)
             {
-                Instantiate(stage,new Vector2(0,0),Quaternion.identity);
+                Instantiate(stage.mapPrefabs,new Vector2(0,0),Quaternion.identity);
                 _currentStageDataSO = stage;
             }
         }
@@ -35,11 +35,15 @@ public class StageManager : MonoBehaviour
             _currentStageDataSO.mapPrefabs.GetComponentInChildren<CreatLight>().StartGame();
         });
 
+
+
         for (int i = 0; i < _currentStageDataSO.usedObstacles.Count;i++)
         {
-             Instantiate(_creatObstacleBtn, _creatObstacleBtnPanel);
-
+            ObstaclesCreateBtn obsBtn = Instantiate(_creatObstacleBtn, _creatObstacleBtnPanel);
+            obsBtn.Initialized(_currentStageDataSO.usedObstacles[i].obstacle);
         }
+
+        _creatObstacleBtn.gameObject.SetActive(false);
 
 
     }

@@ -15,7 +15,7 @@ public abstract class Obstacle : MonoBehaviour, IObstacle
 {
     public bool IsCanRotation { get; set; } = true;
 
-    public ObstacleData obstacleData { get; set; }
+    public ObstacleData obstacleData;
 
     public virtual void DIrectionChangeLeft()
     {

@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public struct Obstacles
 {
     public Obstacle obstacle;
-    public int Ccount;
+    public int count;
 }
 
 [CreateAssetMenu(menuName = "SO/Stage/StageData")]

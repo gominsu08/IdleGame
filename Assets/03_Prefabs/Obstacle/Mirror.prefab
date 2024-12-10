@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2af91a04c038964faa763af4e19ae43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacleData: {fileID: 11400000, guid: 2bc0a3474704e4046882b039d00f262a, type: 2}
   obstacleType: 0
 --- !u!61 &3738096281815865125
 BoxCollider2D:

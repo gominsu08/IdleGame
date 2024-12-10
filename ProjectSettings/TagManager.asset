@@ -15,7 +15,7 @@ TagManager:
   - Lightobj
   - Floor
   - Wall
-  - 
+  - ArrivalPoint
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 1032146781
+    locked: 0
+  - name: Wall
+    uniqueID: 3000468569
+    locked: 0
+  - name: LightObj
+    uniqueID: 1057638345
     locked: 0
