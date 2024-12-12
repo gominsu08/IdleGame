@@ -16,6 +16,6 @@ MonoBehaviour:
   mapPrefabs: {fileID: 1752012701181485559, guid: 9146060cf9b7ae346822ac3677a09c37, type: 3}
   usedObstacles:
   - obstacle: {fileID: 4672324853581080652, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
-    count: 2
+    count: 6
   - obstacle: {fileID: 8654006180113719410, guid: 37fe62c87a6f9cd429cf3d0485d27b02, type: 3}
     count: 4

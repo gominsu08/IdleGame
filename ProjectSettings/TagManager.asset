@@ -16,7 +16,7 @@ TagManager:
   - Floor
   - Wall
   - ArrivalPoint
-  - 
+  - LightCeate
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: LightObj
     uniqueID: 1057638345
+    locked: 0
+  - name: Ghost
+    uniqueID: 3308339209
     locked: 0
