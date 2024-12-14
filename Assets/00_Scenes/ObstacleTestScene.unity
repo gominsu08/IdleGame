@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -259,6 +260,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56666c5a40171f54783dd416a44f42bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4023
+  m_MaxRayIntersections: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +313,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000005d4f853d5984d7b2c9470a3f094031c5
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -397,11 +414,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1856003062707935253, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.97
       objectReference: {fileID: 0}
     - target: {fileID: 1856003062707935253, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 1856003062707935253, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -435,17 +452,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3738096281815865125, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
-      propertyPath: m_Size.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3738096281815865125, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
-      propertyPath: m_Size.y
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 7027633380260735814, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
       propertyPath: m_Name
       value: Mirror
+      objectReference: {fileID: 0}
+    - target: {fileID: 7477955095310875094, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
+      propertyPath: m_Name
+      value: Delete
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138476699779781, guid: ca579caa6bc6aae4cae0027c2d77d86a, type: 3}
+      propertyPath: m_Name
+      value: Rotation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
